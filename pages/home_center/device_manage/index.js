@@ -37,4 +37,5 @@ Page({
     deleteDevice(device_id)
   }
 
+  }
 })

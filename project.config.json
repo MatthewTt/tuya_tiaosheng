@@ -21,7 +21,10 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
+<<<<<<< HEAD
     "lazyloadPlaceholderEnable": false,
+=======
+>>>>>>> ffbd87af2df16d0994473b89394364226dc9ab8b
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": false,
@@ -32,6 +35,11 @@
     },
     "enableEngineNative": false,
     "useIsolateContext": true,
+<<<<<<< HEAD
+=======
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+>>>>>>> ffbd87af2df16d0994473b89394364226dc9ab8b
     "userConfirmedBundleSwitch": false,
     "packNpmManually": true,
     "packNpmRelationList": [
@@ -40,6 +48,7 @@
         "miniprogramNpmDistDir": "./miniprogram/"
       }
     ],
+<<<<<<< HEAD
     "minifyWXSS": true,
     "showES6CompileOption": false
   },
@@ -47,6 +56,14 @@
   "libVersion": "2.17.0",
   "appid": "wx49e7e0df03c7a453",
   "projectname": "ts-demo",
+=======
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.12.0",
+  "appid": "wx49e7e0df03c7a453",
+  "projectname": "minicode-8",
+>>>>>>> ffbd87af2df16d0994473b89394364226dc9ab8b
   "debugOptions": {
     "hidedInDevtools": []
   },

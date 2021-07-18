@@ -10,6 +10,7 @@
     "pages/base_function/index",
     "pages/ts/index",
     "pages/ts/freeMod"
+    "pages/base_function/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,6 +20,7 @@
   },
   "plugins": {
     "tuya-ap-plugin": {
+<<<<<<< HEAD
       "version": "3.3.24",
       "provider": "wxd2aa51ffacc3ff86"
     }
@@ -28,5 +30,11 @@
       "desc": "你的位置信息将用于家庭位置、天气、智能、设备等功能的使用"
     }
   },
+=======
+      "version": "3.3.18",
+      "provider": "wxd2aa51ffacc3ff86"
+    }
+  },
+>>>>>>> ffbd87af2df16d0994473b89394364226dc9ab8b
   "sitemapLocation": "sitemap.json"
 }

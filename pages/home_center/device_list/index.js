@@ -50,11 +50,6 @@ Page({
     const { id, category, name } = device
     switch (category) {
       case 'kg': break;
-      case 'ts': 
-      wx.navigateTo({
-        url: `/pages/ts/index?device_id=${id}&device_name=${name}`,
-      })
-        break
       default: {
         wx.navigateTo({
           url: `/pages/home_center/common_panel/index?device_id=${id}&device_name=${name}`,

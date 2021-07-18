@@ -13,6 +13,7 @@
   </view>
 
   <view class="device-block" style="justify-content: center" bindtap="remove">
+  <view class="device-block" style="justify-content: center">
     <text class="device-remove">移除设备</text>
   </view>
 </view>
