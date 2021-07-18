@@ -4,12 +4,12 @@
     <view class="container">
       <view class="content">
         <view class="count-box">
-          <view class="count-box-value">100</view>
+          <view class="count-box-value">{{ countData.count_realtime || 0}}</view>
           <view class="count-box-unit">个</view>
         </view>
-        <view bindtap="sendCount1" class="count-tip">最近一次训练</view>
+        <view class="count-tip" wx:if="{{countData.count_realtime}}">用时：{{ countData.time_realtime }}</view>
 
-        <view class="items">
+        <!-- <view class="items">
           <view class="item">
             <view class="item-value">100</view>
             <view class="item-label">小明</view>
@@ -18,27 +18,44 @@
             <view class="item-value">100</view>
             <view class="item-label">小明</view>
           </view>
-        </view>
+        </view> -->
 
         <view class="mode-box">
-          <view bind:tap="connect" class="mode-item">
+          <view bind:tap="connect" class="mode-item" wx:if="!connected">
             <view class="mode-item-left">
               <view class="mode-item-title">连接蓝牙</view>
             </view>
           </view>
-          <view bind:tap="sendMod" class="mode-item">
+          <view bind:tap="onFreeMod" class="mode-item">
             <view class="mode-item-left">
-              <view class="mode-item-title">设置模式</view>
+              <view class="mode-item-title">自由模式</view>
             </view>
           </view>
-          <view bind:tap="sendCount" class="mode-item">
+          <view bind:tap="onCountMod" class="mode-item">
             <view class="mode-item-left">
-              <view class="mode-item-title">设置目标</view>
+              <view class="mode-item-title">倒计数模式</view>
             </view>
           </view>
+          <button>开始</button>
         </view>
       </view>
     </view>
     
   </view>
 </View>
+
+<van-dialog
+  use-slot
+  title="设置目标"
+  show="{{ show }}"
+  show-cancel-button
+  bind:close="onClose"
+  bind:confirm="onConfirm"
+>
+<van-field
+    value="{{ value }}"
+    placeholder="请输入目标个数"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-dialog>

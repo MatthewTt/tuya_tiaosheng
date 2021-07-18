@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "navbar": "../../components/t_navbar"
+    "navbar": "../../components/t_navbar",
+    "van-field": "@vant/weapp/field/index",
+    "van-dialog": "@vant/weapp/dialog/index"
   },
   "navigationStyle": "custom"
 }

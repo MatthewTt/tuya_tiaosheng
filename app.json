@@ -8,7 +8,8 @@
     "pages/function_center/device_connect/index",
     "pages/web_view/index",
     "pages/base_function/index",
-    "pages/ts/index"
+    "pages/ts/index",
+    "pages/ts/freeMod"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +24,9 @@
     }
   },
   "permission": {
-    "scope.userLocation": { "desc": "你的位置信息将用于家庭位置、天气、智能、设备等功能的使用" }
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于家庭位置、天气、智能、设备等功能的使用"
+    }
   },
   "sitemapLocation": "sitemap.json"
 }
